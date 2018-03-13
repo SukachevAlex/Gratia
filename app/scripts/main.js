@@ -8,7 +8,15 @@ $(document).ready(function() {
         slidesToScroll: 1,
         prevArrow: '.header-slider__prev',
         nextArrow: '.header-slider__next',
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: false
+                }
+            }
+        ]
     });
 
 });

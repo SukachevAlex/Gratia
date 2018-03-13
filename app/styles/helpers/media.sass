@@ -1,16 +1,46 @@
 @import "vars"
 
 @media only screen and (max-width : 1200px)
-  /**/
+  .header-slider__image
+    width: 85%
 
 @media only screen and (max-width : 992px)
-  /**/
+  .slick-dots
+    & li
+      &.slick-active
+        & button
+          &::before
+            width: 45px
 
 @media only screen and (max-width : 768px)
-  /**/
+  .header-slider__image
+    width: 75%
+  .header-slider__control
+    top: 45%
+  .header-slider
+    margin-bottom: 45px
+  .button
+    position: static
+    margin: 0 auto 30px
+
+
 
 @media only screen and (max-width : 480px)
-  /**/
+  .header-slider__image
+    width: 65%
+  .header-slider__control
+    top: 35%
+  .logo__wrapper
+    margin: 0 auto 40px
+  .menu.menu__header
+    width: 100%
+    text-align: center
+  .menu__item
+    display: block
+    margin-right: 0
+    margin-bottom: 10px
+    &:last-child
+      margin-bottom: 0
 
 @media only screen and (max-width : 320px)
   /**/

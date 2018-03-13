@@ -53,6 +53,7 @@ body
   display: flex
   justify-content: space-between
   align-items: center
+  flex-wrap: wrap
 
 .navigation__header
   margin-bottom: 40px
@@ -63,12 +64,14 @@ body
 .logo__wrapper
   display: flex
   align-items: center
+  margin-bottom: 20px
 
 .logo__name
   color: #fff
   font-size: 24px
   font-weight: 700
   line-height: 36px
+
 
 .menu__item
   margin-right: 60px
@@ -116,13 +119,15 @@ body
   transform: rotateY(180deg)
 
 .slick-dots
-  bottom: -38%
+  bottom: -25%
   width: auto
   height: auto
   counter-reset: slider-counter
   & li
     margin: 0 0 80px
     display: block
+    &:last-child
+      margin: 0
     &.slick-active
       & button
         &::before
