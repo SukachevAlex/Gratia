@@ -25,6 +25,9 @@ select,
 button
   outline: none
 
+a
+  text-decoration: none
+  
 body
   font-size: 16px
   min-width: 320px
@@ -34,5 +37,160 @@ body
   overflow-x: hidden
   margin: 0
   padding: 0
+
+.container
+  max-width: 1180px
+  width: 100%
+  height: 100%
+  margin: 0 auto
+  position: relative
+
+.header
+  background-color: #1d1f2d
+  padding: 65px 15px 85px
+
+.navigation
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.navigation__header
+  margin-bottom: 40px
+
+.logo__header
+  margin-right: 15px
+
+.logo__wrapper
+  display: flex
+  align-items: center
+
+.logo__name
+  color: #fff
+  font-size: 24px
+  font-weight: 700
+  line-height: 36px
+
+.menu__item
+  margin-right: 60px
+  &:last-child
+    margin-right: 0px
+
+.menu__link
+  color: #fff
+  font-weight: 700
+  line-height: 36px
+  letter-spacing: 0.4px
+  transition: all 0.2s ease
+  &:hover
+    color: $main-color
+
+.menu__item
+  display: inline-block
+
+.header-slider
+  position: relative
+  margin-bottom: 115px
+
+.header-slider__image
+  max-width: 1000px
+  width: 100%
+  margin: 0 auto
+  border-radius: 15%
+
+.header-slider__control
+  width: 57px
+  height: 111px
+  cursor: pointer
+  position: absolute
+  top: 50%
+  background: url("../img/svg/arrow-left.svg") 0 0 no-repeat
+  background-size: 100%
+  z-index: 1
+  &.slick-disabled
+    opacity: 0.6
+
+.header-slider__prev
+  left: 0
+.header-slider__next
+  right: 0
+  transform: rotateY(180deg)
+
+.slick-dots
+  bottom: -38%
+  width: auto
+  height: auto
+  counter-reset: slider-counter
+  & li
+    margin: 0 0 80px
+    display: block
+    &.slick-active
+      & button
+        &::before
+          text-align: left
+          width: 65px
+          height: auto
+          color: $main-color
+          opacity: 1
+          padding-bottom: 10px
+          border-bottom: 1px solid $main-color
+    & button
+      &::before
+        display:
+        content: "0" counter(slider-counter)
+        counter-increment: slider-counter
+        font-size: 16px
+        color: #fff
+        opacity: 1
+        font-weight: 700
+
+.slick-dots li button:before, .slick-next:before, .slick-prev:before
+  font-family: Arial, sans-serif
+
+.arrow__header
+  text-align: center
+
+.arrow_down
+  opacity: 0.7
+  display: block
+  position: relative
+  transition: all 0.2s ease
+  &:hover
+    opacity: 1
+  &::before
+    position: absolute
+    top: 30px
+    left: 50%
+    display: block
+    content: ""
+    width: 30px
+    height: 40px
+    margin-top: 20px
+    background: url("../img/svg/arrow-down.svg") 0 0 no-repeat
+    background-size: 100%
+
+.arrow__text
+  font-style: italic
+  line-height: 36px
+  color: #485471
+
+.button
+  max-width: 230px
+  border: 1px solid #263045
+  padding: 15px 50px
+  text-transform: uppercase
+  font-weight: 700
+  color: $main-color
+  cursor: pointer
+  transition: all 0.2s ease
+  &:hover
+    color: #fff
+    background-color: $main-color
+
+.button__header
+  position: absolute
+  bottom: 0
+  right: 0
+
+
 
 @import "helpers/media"

@@ -27,8 +27,39 @@ html
         meta(name="apple-mobile-web-app-status-bar-style" content="#000")
 
     body
+        header.header
+            div.container
+                nav.navigation.navigation__header
+                    a.logo__wrapper(href="#")
+                        img.logo.logo__header(src="../img/header/logo.png" srcset="../img/header/logo@2x.png 2x" alt="Gratia logo")
+                        span.logo__name Gratia
+                    ul.menu.menu__header
+                        li.menu__item
+                            a.menu__link(href="#") About
+                        li.menu__item
+                            a.menu__link(href="#") Menu
+                        li.menu__item
+                            a.menu__link(href="#") Gallery
+                        li.menu__item
+                            a.menu__link(href="#") Contact
+                div.header-slider
+                    div.header-slider__prev.header-slider__control
+                    div.header-slider__next.header-slider__control
+                    div.header-slider-js
+                        div.header-slider__item
+                            img.header-slider__image(src="../img/header/slider_1.png" alt="Slider image")
+                        div.header-slider__item
+                            img.header-slider__image(src="../img/header/slider_2.jpg" alt="Slider image")
+                        div.header-slider__item
+                            img.header-slider__image(src="../img/header/slider_3.jpg" alt="Slider image")
+                a.arrow.arrow_down.arrow__header(href="#")
+                    span.arrow__text and perfection is  not a detail
+                div.button.button__header Book a table
 
 
+
+        main.main
+            section.section-perfection
         script(src="js/jquery.min.js")
         script(src="js/libs.min.js")
         script(src="js/main.js")
