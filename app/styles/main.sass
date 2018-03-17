@@ -47,7 +47,7 @@ body
 
 .header
   background-color: #1d1f2d
-  padding: 65px 15px 85px
+  padding: 30px 15px 85px
 
 .navigation
   display: flex
@@ -55,8 +55,7 @@ body
   align-items: center
   flex-wrap: wrap
 
-.navigation__header
-  margin-bottom: 40px
+
 
 .logo__header
   margin-right: 15px
@@ -375,10 +374,106 @@ body
   &::before
     content: "4"
 
-
-
 .feature__item_number-sixteen
   &::before
     content: "16"
+
+.footer
+  padding: 0 0 190px
+  position: relative
+  overflow-x: hidden
+
+.logo__footer
+  width: 140px
+  height: 140px
+  margin: 0 auto
+  padding: 28px
+  background: url("../img/header/logo.png") center no-repeat
+  background-size: 60%
+  position: relative
+  z-index: 1
+  border: 1px solid #e6e6e6
+  border-radius: 50%
+  &::before
+    content: ""
+    display: block
+    width: 100vw
+    height: 1px
+    background-color: #e6e6e6
+    position: absolute
+    left: 140px
+    top: 70px
+  &::after
+    content: ""
+    display: block
+    width: 100vw
+    height: 1px
+    background-color: #e6e6e6
+    position: absolute
+    right: 140px
+    top: 70px
+
+.brand.brand__footer
+  text-align: center
+  color: $main-color-black
+  font-size: 18px
+  font-weight: 700
+
+.brand__footer
+  margin-top: 30px
+
+.social
+  border-top: 1px solid #e6e6e6
+  width: 156px
+  margin: 60px auto 0
+  padding-top: 32px
+  text-align: center
+
+.social__item
+  display: inline-block
+  margin-right: 15px
+  &:last-child
+    margin-right: 0
+
+
+.social__link
+  display: block
+  width: 26px
+  height: 25px
+  background-color: #e6e6e6
+  border-radius: 50%
+  position: relative
+  opacity: 0.6
+  transition: all 0.2s ease
+  &:hover
+    opacity: 1
+    background-color: $main-color
+  &::before
+    position: absolute
+    top: 5px
+    left: 5px
+    content: ""
+    display: block
+    width: 15px
+    height: 15px
+
+
+.social__link_facebook
+  &::before
+    background: url("../img/svg/facebook-logo.svg") center no-repeat
+    background-size: 100%
+
+.social__link_whatsapp
+  &::before
+    background: url("../img/svg/whatsapp-logo.svg") center no-repeat
+    background-size: 100%
+
+.social__link_instagram
+  &::before
+    background: url("../img/svg/instagram-logo.svg") center no-repeat
+    background-size: 100%
+
+
+
 
 @import "helpers/media"
