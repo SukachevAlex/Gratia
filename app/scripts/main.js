@@ -28,3 +28,7 @@ $(document).ready(function() {
     });
 
 });
+
+$(window).on('load', function() {
+    $('.preloader__wrapper').delay(1500).fadeOut('slow');
+});
