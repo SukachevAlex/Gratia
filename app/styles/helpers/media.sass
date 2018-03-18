@@ -10,6 +10,13 @@
     &:last-child
       margin-bottom: 0
 
+  .form__line_col-5
+    grid-template-columns: 120px 120px 120px 180px 180px
+  .form__line_col-2
+    grid-template-columns: 430px 400px
+  .reserve-form__input
+    font-size: 13px
+
 @media only screen and (max-width : 992px)
   .slick-dots
     & li
@@ -19,6 +26,17 @@
             width: 45px
   .offer__item
     margin-right: 30px
+
+@media only screen and (max-width : 900px)
+  .form__line_col-5
+    grid-template-columns: repeat(auto-fill, 200px)
+    justify-content: center
+  .form__line_col-2
+    grid-template-columns: repeat(2, 320px)
+  .reserve__form
+    grid-template-rows: 2fr 0.5fr 0.5fr 3fr 0.5fr
+
+
 
 @media only screen and (max-width : 768px)
   .header-slider__image
@@ -40,6 +58,20 @@
   .title__card
     padding: 40px 15px 65px
 
+  .button
+    margin-left: 50%
+    transform: translateX(-50%)
+//
+@media only screen and (max-width : 700px)
+  .form__line_col-5
+    grid-template-columns: repeat(auto-fill, 120px)
+  .form__line_col-2
+    grid-template-columns: repeat(2, 200px)
+  .reserve__form
+    grid-template-rows: 2fr 0.5fr 0.5fr 3fr 0.5fr
+  .reserve-form__input_wide
+    font-size: 10px
+    padding: 20px 5px
 
 @media only screen and (max-width : 480px)
   .header-slider__image
@@ -77,6 +109,16 @@
 
   .footer
     padding-bottom: 90px
+
+  .form__line_col-5
+    grid-template-columns: 250px
+  .form__line_col-2
+    grid-template-columns: 250px
+  .reserve__form
+    grid-template-rows: 2fr 0.5fr 0.5fr 1.5fr 0.25fr
+  .reserve-form__input_wide
+    font-size: 13px
+    padding: 20px
 
 @media only screen and (max-width : 320px)
   /**/

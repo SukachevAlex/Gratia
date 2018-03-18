@@ -1,0 +1,88 @@
+doctype html
+html
+    head
+
+        meta(charset="utf-8")
+        title Title
+        <!--[if IE]>
+        meta(http-equiv='X-UA-Compatible', content="IE = edge")
+        <![endif]-->
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+        meta(name="keywords" content="")
+        meta(name="description" content="")
+
+        meta(property="og:image" content="path_to_image")
+        link(rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon")
+        link(rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png")
+        link(rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png")
+        link(rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png")
+        link(rel="stylesheet" type="text/css" href="css/main.css")
+        meta(name="theme-color" content="#000")
+        meta(name="msapplication-navbutton-color" content="#000")
+        meta(name="apple-mobile-web-app-status-bar-style" content="#000")
+
+        link(rel="stylesheet" type='text/css' href="css/main.css")
+
+        <!-- Chrome, Firefox OS and Opera -->
+        meta(name="theme-color" content="#000")
+        <!-- Windows Phone -->
+        meta(name="msapplication-navbutton-color" content="#000")
+        <!-- iOS Safari -->
+        meta(name="apple-mobile-web-app-status-bar-style" content="#000")
+
+
+    body
+        header.header.header_white
+            div.container
+                nav.navigation.navigation__header
+                    a.logo__wrapper(href="#")
+                        img.logo.logo__header(src="../img/header/logo.png" srcset="../img/header/logo@2x.png 2x" alt="Gratia logo")
+                        span.logo__name.logo__name_black Gratia
+                    ul.menu.menu__header
+                        li.menu__item
+                            a.menu__link.menu__link_black(href="#") About
+                        li.menu__item
+                            a.menu__link.menu__link_black(href="#") Menu
+                        li.menu__item
+                            a.menu__link.menu__link_black(href="#") Gallery
+                        li.menu__item
+                            a.menu__link.menu__link_black(href="#") Contact
+        main
+            section.section-reserve
+                div.container
+                    div.title__wrapper
+                        div.section__title Book a table
+                        div.section__sub-title Book the best tables
+                    form(action="" method="post").reserve__form
+                        div.form__line_col-5
+                            input.reserve-form__input(type="number" placeholder="dd")
+                            input.reserve-form__input(type="number" placeholder="mm")
+                            input.reserve-form__input(type="number" placeholder="year")
+                            input.reserve-form__input(type="text" placeholder="hour")
+                            input.reserve-form__input.reserve-form__input_wide(type="number" placeholder="number of people")
+                        div.form__line_col-2
+                            input.reserve-form__input(type="text" placeholder="first and last name")
+                            input.reserve-form__input(type="tel" placeholder="phone number")
+                        div.form__line_col-2
+                            input.reserve-form__input(type="email" placeholder="email")
+                            input.reserve-form__input.reserve-form__input_background-black(type="text" placeholder="PREPARE MENU")
+                        div.form__line_col-1
+                            textarea.reserve-form__input.reserve-form__input_textarea(placeholder="Your message")
+                        div.form__line_col-1
+                            input.reserve-form__input.reserve-form__input_button(type="submit" value="send")
+
+
+        footer.footer
+            div.logo__footer
+            div.brand.brand__footer Gratia Restaurant
+            ul.social
+                li.social__item
+                    a.social__link.social__link_facebook(href="https://facebook.com")
+                li.social__item
+                    a.social__link.social__link_whatsapp(href="https://whatsapp.com")
+                li.social__item
+                    a.social__link.social__link_instagram(href="https://instagram.com/")
+
+        script(src="js/jquery.min.js")
+        script(src="js/libs.min.js")
+        script(src="js/main.js")
