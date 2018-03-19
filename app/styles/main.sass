@@ -653,4 +653,44 @@ $loader-color: #FDD835
     color: $main-color
     background-color: #fff
 
+.menu__gallery
+  margin: 120px 20px 0
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.dish
+  width: 30%
+  background-color: #fff
+  display: flex
+  flex-direction: column
+  text-align: center
+  margin-bottom: 65px
+  box-shadow: 0 0 183px #e5e6eb
+  transition: all 0.2s ease
+  &:hover
+    box-shadow: 0 0 83px $main-color
+
+.dish__name
+  margin: 65px 25px 30px
+  color: $main-color-black
+  font-size: 30px
+  font-weight: 700
+  text-transform: uppercase
+
+.dish__description
+  margin: 0 25px 50px
+  color: $main-color-black
+  font-size: 16px
+  font-style: italic
+  line-height: 28px
+
+
+
+
+
+
+.dish__photo
+  width: 100%
+
 @import "helpers/media"

@@ -3,7 +3,7 @@ html
     head
 
         meta(charset="utf-8")
-        title Reserve the table
+        title Menu
         <!--[if IE]>
         meta(http-equiv='X-UA-Compatible', content="IE = edge")
         <![endif]-->
@@ -51,26 +51,39 @@ html
             section.section-reserve
                 div.container
                     div.title__wrapper
-                        div.section__title Book a table
-                        div.section__sub-title Book the best tables
-                    form(action="" method="post").reserve__form
-                        div.form__line_col-5
-                            input.reserve-form__input(type="number" placeholder="dd")
-                            input.reserve-form__input(type="number" placeholder="mm")
-                            input.reserve-form__input(type="number" placeholder="year")
-                            input.reserve-form__input(type="text" placeholder="hour")
-                            input.reserve-form__input.reserve-form__input_wide(type="number" placeholder="number of people")
-                        div.form__line_col-2
-                            input.reserve-form__input(type="text" placeholder="first and last name")
-                            input.reserve-form__input(type="tel" placeholder="phone number")
-                        div.form__line_col-2
-                            input.reserve-form__input(type="email" placeholder="email")
-                            input.reserve-form__input.reserve-form__input_background-black(type="text" placeholder="PREPARE MENU")
-                        div.form__line_col-1
-                            textarea.reserve-form__input.reserve-form__input_textarea(placeholder="Your message")
-                        div.form__line_col-1
-                            input.reserve-form__input.reserve-form__input_button(type="submit" value="send")
-
+                        div.section__title Menu
+                        div.section__sub-title Executive Chef has created seasonal menus.
+                    div.menu__gallery
+                        div.dish
+                            img.dish__photo(src="../img/menu/photo_1.jpg" alt="Photo Main Dishes")
+                            div.dish__info
+                                p.dish__name MAIN DISHES
+                                p.dish__description The main dish is usually the heaviest, heartiest, and most complex or substantial dish on a menu.
+                        div.dish
+                            img.dish__photo(src="../img/menu/photo_2.jpg" alt="Photo Main Dishes")
+                            div.dish__info
+                                p.dish__name Soups
+                                p.dish__description Soup is a primarily liquid food, generally served warm or hot
+                        div.dish
+                            img.dish__photo(src="../img/menu/photo_3.jpg" alt="Photo Main Dishes")
+                            div.dish__info
+                                p.dish__name Hamburgers
+                                p.dish__description Sandwich consisting of one or more cooked patties of ground meat, usually beef, placed inside a sliced bread roll or bun.
+                        div.dish
+                            img.dish__photo(src="../img/menu/photo_4.jpg" alt="Photo Main Dishes")
+                            div.dish__info
+                                p.dish__name Desserts
+                                p.dish__description Confectionery course that concludes a main meal.
+                        div.dish
+                            img.dish__photo(src="../img/menu/photo_5.jpg" alt="Photo Main Dishes")
+                            div.dish__info
+                                p.dish__name Barbecue
+                                p.dish__description Both a cooking method and an apparatus/machine.
+                        div.dish
+                            img.dish__photo(src="../img/menu/photo_6.jpg" alt="Photo Main Dishes")
+                            div.dish__info
+                                p.dish__name Salads
+                                p.dish__description dish consisting of a mixture of small pieces of food, usually vegetables.
 
         footer.footer
             div.logo__footer
