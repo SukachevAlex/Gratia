@@ -25,6 +25,7 @@
     "gulp-tinypng": "^1.0.2",
     "jquery": "^3.3.1",
     "slick-carousel": "^1.8.1",
-    "gulp-uglifyjs": "^0.6.2"
+    "gulp-uglifyjs": "^0.6.2",
+    "magnific-popup": "^1.1.0"
   }
 }

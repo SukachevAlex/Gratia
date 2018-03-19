@@ -40,9 +40,9 @@ html
                         span.logo__name.logo__name_black Gratia
                     ul.menu.menu__header
                         li.menu__item
-                            a.menu__link.menu__link_black(href="#") About
+                            a.menu__link.menu__link_black(href="index.html") About
                         li.menu__item
-                            a.menu__link.menu__link_black(href="#") Menu
+                            a.menu__link.menu__link_black.menu__link_active(href="#") Menu
                         li.menu__item
                             a.menu__link.menu__link_black(href="#") Gallery
                         li.menu__item
@@ -64,7 +64,7 @@ html
                             div.dish__info
                                 p.dish__name Soups
                                 p.dish__description Soup is a primarily liquid food, generally served warm or hot
-                        div.dish
+                        a.dish.popup__link(href="#popup_hamburgers")
                             img.dish__photo(src="../img/menu/photo_3.jpg" alt="Photo Main Dishes")
                             div.dish__info
                                 p.dish__name Hamburgers
@@ -95,6 +95,22 @@ html
                     a.social__link.social__link_whatsapp(href="https://whatsapp.com")
                 li.social__item
                     a.social__link.social__link_instagram(href="https://instagram.com/")
+
+        div.mfp-hide.popup.popup_hamburgers#popup_hamburgers
+            div.dish__card
+                div.popup__close X
+                img.popup__photo(src="../img/menu/popup_photo_1.jpg" alt="Hamburger photo")
+                div.popup__info
+                    div.dish__name Chicken burger
+                    div.dish__description Chicken Burgers with Crispy Cheddar Cheese.
+                    div.popup__line
+                    div.dish__components
+                        div.component__title Components
+                        div.component__list chicken breast fillet, marinated overnight accompained with tomato cos lettuce & Spanish red onion
+                    div.popup__line
+                    div.dish__price
+                        div.price__number 5$
+                        div.price__tag Total cost
 
         script(src="js/jquery.min.js")
         script(src="js/libs.min.js")
